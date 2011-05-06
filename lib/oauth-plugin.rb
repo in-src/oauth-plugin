@@ -10,7 +10,7 @@ else
   ActionController::Base.send :include, OAuth::Controllers::ApplicationControllerMethods
 end
 
-
+if Rails.version =~ /^3\./
 module OAuth
   module Plugin
     class OAuthRailtie < Rails::Railtie
@@ -19,4 +19,5 @@ module OAuth
       end
     end
   end
+end
 end

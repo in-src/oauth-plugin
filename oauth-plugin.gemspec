@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require "oauth-plugin/version"
 
 Gem::Specification.new do |s|
-  s.name = %q{oauth-plugin}
+  s.name = %q{insrc-oauth-plugin}
   s.version = Oauth::Plugin::VERSION
 
   s.required_rubygems_version = Gem::Requirement.new("> 1.3.1") if s.respond_to? :required_rubygems_version=
@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   
-  s.homepage = %q{http://github.com/pelle/oauth-plugin}
+  s.homepage = %q{https://github.com/in-src/oauth-plugin}
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{oauth}
   s.rubygems_version = %q{1.3.7}
